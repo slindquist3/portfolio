@@ -18,7 +18,7 @@ export default function Home() {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/pokedex">Pokedex</Link>
           </li>
 
         </ul>
