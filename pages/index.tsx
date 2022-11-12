@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
-import ButtonDemo from "../components/ButtonDemo";
-
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
+x;
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -10,7 +9,6 @@ export default function Home() {
         <title>Scott Lindquist</title>
         <meta name="description" content="My portfolio" />
       </Head>
-
       Scott Lindquist
       <nav>
         <ul>
@@ -20,17 +18,9 @@ export default function Home() {
           <li>
             <Link href="/pokedex">Pokedex</Link>
           </li>
-
         </ul>
       </nav>
-
       <p>This page was built with React, Next, and styled-components.</p>
-
-      <ButtonDemo />
-
-
-
-
     </div>
-  )
+  );
 }
