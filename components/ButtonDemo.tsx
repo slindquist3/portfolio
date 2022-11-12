@@ -1,19 +1,18 @@
 import { useState } from 'react';
 import styled from "styled-components";
 
-
 const ButttonDemo = () => {
 
-    const [ clicked, setClicked ] = useState(false);
+    const [ count, setCount ] = useState(100);
 
     const Button = styled.button`
-        height: 100px;
+        height: ${count}px;
         width: 50px;
     `;
 
 
     return (
-    <Button onClick={() => setClicked(!clicked)}>{clicked ? "You clicked me" : "Click Me"}</Button>
+    <Button onClick={() => setCount( count + 20)}>{count ? `You clicked me ${count} times` : "Click Me"}</Button>
     )
 }
 
