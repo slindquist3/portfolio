@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Display from "../components/pokedex/Display";
 import Controls from "../components/pokedex/Controls";
+import Lights from "../components/pokedex/Lights";
 import styled from "styled-components";
 
 const API = "https://pokeapi.co/api/v2/pokemon/";
@@ -53,12 +54,17 @@ const Pokedex = () => {
     background-color: red;
     height: 600px;
     width: 300px;
+    border: 3px solid black;
+    margin-left: 50%;
+    margin-top: 3rem;
+    transform: translate(-50%, 0);
   `;
 
   return (
     <>
       <Device>
         <Panel>
+          <Lights />
           <ScreenBorder>
             <Screen>{pokemon.name && <Display {...pokemon} />}</Screen>
           </ScreenBorder>
